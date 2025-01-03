@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary, Love! ❤️</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #d3b7cb, #d35ce5);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: #b71313;
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 1.5rem;
+            margin: 10px auto;
+            line-height: 1.8;
+        }
+        .button {
+            background-color: #753daa;
+            color: #fbfafa;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+        .button:hover {
+            background-color: #fc5c7d;
+            transform: scale(1.1);
+        }
+        .hidden-section {
+            display: none;
+            margin-top: 30px;
+        }
+        .hidden-section img {
+            border-radius: 15px;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(125, 49, 49, 0.3);
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1></b>💝Happy 2nd Anniversary, My Love, Mera Bacha, Meri Betu 💏💝</h1>
+    <p>Two years of love, laughter, and endless memories with you,  
+    and it still feels like a dream come true!
+    Har pal apki muskurahat meri zindagi ka sabse khoobsurat hissa hai.
+    Happy Anniversary, meri jaan!"</p>
+
+    <!-- Button 1 -->
+    <button class="button" id="button1" onclick="revealSection('section1', 'button2')">Tap here, Betu ❤️</button>
+
+    <!-- Hidden Sections -->
+    <div class="hidden-section" id="section1">
+        <p style="font-size: 2rem; font-weight: bold;">I Love You So Much! ❤️</p>
+        <p>"Apke bina meri duniya adhoori hai, tu meri zindagi ka wo hissa hai jise main har din apni jaan se bhi zyada chahata hoon. Happy 2nd Anniversary, Meri Jaan." 🥰</p>
+        <img src="love1.jpg" alt="Special Memory">
+    </div>
+
+    <!-- Button 2 -->
+    <button class="button" id="button2" onclick="revealSection('section2', 'button3')" style="display: none;">Tap here Betu, ek baar aur ❤️</button>
+
+    <div class="hidden-section" id="section2">
+        <p>"Apka har ek look mere dil ko dheere dheere apne jadoo mein baandh leta hai. Tumhara body, tumhara grace, sab kuch itna perfect hai, ki nazar hataana mushkil ho jaata hai, thu thu 💦🧿" 🚶‍♂️❤️🚶‍♀️</p>
+        <img src="love2.jpg" alt="Our Walk">
+    </div>
+
+    <!-- Button 3 -->
+    <button class="button" id="button3" onclick="revealSection('section3', null)" style="display: none;"> Tap here betu Just one more time 🌚 ❤️</button>
+
+    <div class="hidden-section" id="section3">
+        <p>"Har din tumse pyaar aur gehra hota jaa raha hai,
+            Tumhare saath bitaye har pal mein kuch naya ho raha hai.
+            Meri duniya mein tumhare hone se,
+            Har din ek nayi khushi milti jaa rahi hai." 😘😘😘 
+            (** m soch raha koi apni SS laga du..😁),
+            I AM SORRY BABU FOR EVERTHING </p>
+        <img src="love3.jpg" alt="Sunshine Memory">
+    </div>
+
+    <footer>
+        Jab ap saath ho, zindagi bas ek khubsurat safar lagti hai. Happy Anniversary, meri pyaari!  
+             ~~Apka pyara sa bacha 💋💝
+    </footer>
+
+    <script>
+        function revealSection(sectionId, nextButtonId) {
+            // Display the current section
+            const section = document.getElementById(sectionId);
+            section.style.display = 'block';
+
+            // Show the next button if it exists
+            if (nextButtonId) {
+                const nextButton = document.getElementById(nextButtonId);
+                nextButton.style.display = 'inline-block';
+            }
+        }
+    </script>
+</body>
+</html>
